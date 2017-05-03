@@ -1,6 +1,6 @@
 import {get} from './get.js';
 import {set} from './set.js';
-export function createReducerScope(scope) {
+export default function createReducerScope(scope) {
   var keys = scope.split('.');
   return function createScopedReducer(reducer) {
     return function scopedReducer(rootState, action) {
@@ -11,7 +11,7 @@ export function createReducerScope(scope) {
       if (scopedState === newScopedState) {
         return rootState;
       }
-      const nextState = set(keys, rootState, newScopedState);
+      var nextState = set(keys, rootState, newScopedState);
       return nextState;
     }
   }

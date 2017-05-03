@@ -14,7 +14,7 @@ $ npm install redux-scoped-reducer --save
 
 ```js
 // Import the library
-import {createReducerScope} from 'redux-scoped-reducer';
+import createReducerScope from 'redux-scoped-reducer';
 // Create the reducer scoper
 const createViewsReducer = createReducerScope('user.views');
 
@@ -54,7 +54,7 @@ const nextState = scopedViewReducer(state, action);
 
 ### API
 ```flow
-import {createReducerScope} from 'redux-scoped-reducer';
+import createReducerScope from 'redux-scoped-reducer';
 
 // scope can be dot separated to allow for deep path scoping.
 // Examples: 'user', 'user.views', 'user.views.viewCount', ...etc
@@ -73,7 +73,7 @@ type Action = {
 
 ### More Usage Examples
 ```js
-import {createReducerScope} from 'redux-scoped-reducer';
+import createReducerScope from 'redux-scoped-reducer';
 // The scoped reducer pattern works nicely with the `reduce-reducers` library
 import reduceReducers from 'reduce-reducers';
 

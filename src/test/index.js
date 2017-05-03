@@ -1,7 +1,7 @@
 import './get.js';
 import './set.js';
 import tape from 'tape';
-import {createReducerScope} from '../index.js';
+import createReducerScope from '../index.js';
 
 tape('createReducerScope single property scope', function(t) {
   var scope = createReducerScope('user');

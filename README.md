@@ -9,3 +9,8 @@
 $ npm install redux-scoped-reducer --save
 ```
 
+### Usage
+
+```js
+// TODO: Add usage documentation
+```

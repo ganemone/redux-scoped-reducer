@@ -1,6 +1,7 @@
 # redux-scoped-reducer
 
 [![build status](https://travis-ci.org/ganemone/redux-scoped-reducer.svg?branch=master)](https://travis-ci.org/ganemone/redux-scoped-reducer)
+[![npm version](https://img.shields.io/npm/v/redux-scoped-reducer.svg)](https://www.npmjs.com/package/redux-scoped-reducer)
 
 ## Quickstart
 

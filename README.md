@@ -31,7 +31,7 @@ function viewReducer(state, action) {
 }
 
 // Scope the viewReducer function
-const scopedViewReducer = reducerScope(viewReducer);
+const scopedViewReducer = createViewsReducer(viewReducer);
 
 const state = {
   user: {
